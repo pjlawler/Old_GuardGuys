@@ -3,6 +3,9 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+header {
+    overflow-y: hidden;
+}
 header #topheader {
     flex-direction: row;
     list-style-type: disc;
@@ -17,7 +20,6 @@ header ul {
 header .hero {
     height: 200px;
     width: 100%;
-    overflow: auto;
 }
 
 #centerinfo {
