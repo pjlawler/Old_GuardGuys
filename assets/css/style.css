@@ -1,92 +1,99 @@
 * {
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+
 header {
-    overflow-y: hidden;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 999;
+
 }
-header #topheader {
-    flex-direction: row;
-    list-style-type: disc;
-    vertical-align: bottom;
+
+
+.share {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(97, 194, 72);;
+}
+
+.share a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+}
+
+.jumbotron img {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.jumbotron p {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.0em;
+    font-style: italic;
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
 header ul {
     list-style-type: none;
-    
 }
 
-header .hero {
-    height: 200px;
-    width: 100%;
+.main {
+    margin-top: 25px;
+    background-color: white;
 }
 
-#centerinfo {
-    width: 50%;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    font-style: oblique;
-
-}
-
-.redbox {
-    background-color: #D32333;
-    position: relative;
-    top: -30px;
-
-}
-
-table {
-    table-layout: fixed;
-    width: 100%;
-    vertical-align: top;
-    padding: 20px;
-}
-
-td {
-    width: 33.33%;
-    text-align: left;
-    vertical-align: top;
-}
-
-.infobox {
-    color: #D32333;
-    border: black solid 2px;
-    width: auto;
-    height: auto;
-    margin: 10px;
-}
-
-.infobox h2 {
-    font-size: 20px;
-}
-
-.infobox h2 {
-    text-align: center;
-}
-
-.infobox ul {
-    text-align: left;
-}
-
-.infobox img {
-    width: 350;
-    height: 350;
-}
-
-#boxes {
-    width: 100%;
+.description-box {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom:#3B8BEB solid 2px;
 }
 
-@media screen and (max-width: 600px) {
-    .infobox img {
-        width: 100%;
-    }
+.description-box .icon-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 0% auto;
 }
+
+.description-box p {
+    padding-left: 50px;
+    font-size: 35px;
+    color: #3B8BEB;
+}
+
+.description-box span {
+    font-size: 100px;
+    color: #3B8BEB;
+    padding-left: 5px;
+}
+
+.description-box article {
+    padding-left: 5px;
+}
+
+
