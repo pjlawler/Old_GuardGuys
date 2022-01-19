@@ -4,7 +4,6 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-
 header {
     display: block;
     position: -webkit-sticky;
@@ -14,7 +13,6 @@ header {
     z-index: 999;
 
 }
-
 
 .share {
     width: 100%;
