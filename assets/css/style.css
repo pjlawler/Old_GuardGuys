@@ -104,24 +104,29 @@ header {
 
 .jumbotron {
     display: flex;
-    flex-direction: column;
-    background-color: black;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.736);
+    margin: 0 auto;
+    margin-top: 50px;
+    align-items: center;
+    /* border: black 1px solid; */
     padding: 20px;
 }
 
 .jumbotron img {
-    width: 300px;
+    width: 600px;
     margin: 0 auto;
+    border: #61C248;
 }
 
 .jumbotron p {
-    color: white;
-    width: 60%;
-    margin: 0 auto;
+    color: #61C248;
+    margin-right: 10px;
     font-size: 2.0em;
     font-style: italic;
-    margin-bottom: 25px;
     line-height: 1.5;
+    text-align: left;
+
 }
 
 
@@ -148,6 +153,7 @@ h3 {
 
 .description-box {
     display: flex;
+    flex-direction: ;
     width: 60%;
     margin: 0 auto;
     align-items: center;
