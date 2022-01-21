@@ -70,13 +70,19 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo-block p {
     font-family: 'Kanit';
-    font-size: 22px;
-    line-height: 1.8;
-    margin: 0 auto;
+    color: #61C248;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: left;
 }
 
 .nav-menu {
@@ -103,29 +109,19 @@ header {
 }
 
 .jumbotron {
-    display: flex;
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.736);
-    margin: 0 auto;
-    margin-top: 50px;
-    align-items: center;
-    /* border: black 1px solid; */
-    padding: 20px;
+   
 }
 
 .jumbotron img {
-    width: 600px;
-    margin: 0 auto;
-    border: #61C248;
+    /* width: 600px; */
+    /* margin: 0 auto; */
+    /* border: #61C248; */
 }
 
-.jumbotron p {
-    color: #61C248;
-    margin-right: 10px;
-    font-size: 2.0em;
-    font-style: italic;
-    line-height: 1.5;
-    text-align: left;
+
+
+.menu p {
+ 
 
 }
 
