@@ -62,7 +62,7 @@ header {
     padding: 15px;
     background-color: rgb(221, 219, 219);
     border-bottom: black 1px solid;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
@@ -76,11 +76,13 @@ header {
 .logo-block p {
     font-family: 'Kanit';
     color: #61C248;
+    color: black;
     font-size: 32px;
     font-style: italic;
     font-weight: bold;
-    line-height: 1.0;
-    padding-left: 20px;
+    line-height: 1.3;
+    padding-left: 50px;
+    padding-right: 20px;
     padding-bottom: 20px;
     text-align: left;
 }
@@ -98,6 +100,7 @@ header {
 .nav-menu a {
     text-decoration: none;
     color: #3B8BEB;
+    font-size: 18px;
     padding: 10px;
     border-radius: 20px;
     font-weight: bold;
@@ -120,12 +123,6 @@ header {
 
 
 
-.menu p {
- 
-
-}
-
-
 .main {
     margin-top: 25px;
     background-color: white;
@@ -144,13 +141,13 @@ h3 {
     font-weight: normal;
     margin: 0 auto;
     margin-bottom: 25px;
-    width: 75%;
+    width: 95%;
 }
 
 .description-box {
     display: flex;
     flex-direction: ;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     align-items: center;
     padding-bottom: 25px;
@@ -206,4 +203,15 @@ footer p {
 
 .google-reviews {
     border: rgb(97, 194, 72) 2px solid;
+}
+
+@media screen and (max-width: 1100px) {
+    .description-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .va-cert {
+        display: none;
+    }
 }
