@@ -4,41 +4,43 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+body {
+    background: whitesmoke;
+}
+
+
 header {
-    display: block;
-    position: -webkit-sticky;
     position: sticky;
-    background-color: #ffffff;
+    display: block;
+    position: sticky;
     top: 0;
     z-index: 999;
-
+    border-bottom: black 2px solid;
 }
 
-.share {
-    width: 100%;
-    padding: 5px 10px;
-    border-bottom: black 1px solid;
-    background-color: #3B8BEB;
+/* Beginning of social-wrapper part of header */
+
+.social-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 10px;
+    background-color: #3B8BEB;
 }
 
-.share img {
-    width: 36px;
-}
-
-.share ul {
+.social-wrapper ul {
     display: flex;
-    list-style-type: none;
+    list-style: none;
 }
 
-.share li {
-    margin-top: 5px;
-    padding-left: 10px;
+.social-wrapper ul a {
+    margin-left: 10px;
 }
 
-.share a {
+.contact-icon {
+    width: 40px;
+}
+
+.header-phone {
     text-decoration: none;
     font-size: 24px;
     font-family: 'Kanit';
@@ -52,44 +54,38 @@ header {
     font-size: 18px;
 }
 
-.logo-block {
+/* Begining of nav-wrapper */
+.nav-wrapper {
     display: flex;
-    padding: 15px;
-    background-color: rgb(221, 219, 219);
-    border-bottom: black 1px solid;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: lightgrey;
 }
 
-.logo-block .menu {
+.va-cert {
+    width: 100px;
+    height: 92.94px;
+}
+
+.header-middle {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.logo-block p {
-    font-family: 'Kanit';
-    color: #61C248;
-    color: black;
-    font-size: 24px;
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1.3;
-    padding-left: 50px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    text-align: left;
 }
 
 .nav-menu {
     display: flex;
     list-style-type: none;
     justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
 .nav-menu li {
-    width: 170px;
+    width: 150px;
 }
 
 .nav-menu a {
@@ -106,138 +102,136 @@ header {
     color: #ffffff;
 }
 
-
-.main {
-    margin-top: 25px;
-    background-color: white;
+.header-middle p {
+    font-family: 'Kanit';
     width: 80%;
+    margin-bottom: 20px;
     margin: 0 auto;
+    color: black;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 48px;
+.main {
+    /* background: chartreuse; */
+
+}
+
+.info-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: black solid 2px;
+}
+
+.section-title {
     color: #3B8BEB;
-    font-weight: 650;
     text-align: center;
-    margin-top: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.text-level-1 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-h3 {
-    font-size: 30px;
-    line-height: 1.2;
+.text-level-2 {
     font-weight: normal;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    width: 95%;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .main ul {
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 25px;
-}
-
-.main ul li {
-    font-size: 26px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 30px;
 }
 
-.main ul li span {
-    font-weight: bold;
+.main li {
+    font-weight: normal;
+    font-size: 18px;
+    font-style: oblique;
+    line-height: 1.5;
 }
 
 .description-box {
+    /* width: 90%; */
     display: flex;
-    width: 85%;
     margin: 0 auto;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    border-bottom:#3B8BEB solid 2px;
-}
-
-.description-box:last-child {
-    border: none;
-}
-
-.description-box h4 {
-    font-size: 24px;
-    font-weight: normal;
-}
-
-.description-box  h4 span {
-    font-weight: bold;
-}
-
-.description-box ul {
-    margin-top: 20px;
-    list-style: none;
-}
-
-.description-box li a {
-    font-size: 24x;
-    font-style: oblique;
-}
-
-.description-box .subscript {
-    font-size: 18px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: #3B8BEB solid 2px;
+    overflow-wrap: normal;
+    padding: 15px;
+    margin-top: 10px;
+    background: white;
 }
 
 .icon-box {
+    color: #3B8BEB;
+    font-size: 28px;
+    font-weight: bold;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.description-box p {
-    font-size: 35px;
+    flex-direction: column-reverse;
     text-align: center;
-    width: 300px;
-    color: #3B8BEB;
+    padding: 10px;
 }
 
-.description-box .material-icons {
-    font-size: 200px;
-    color: #3B8BEB;
+.material-icons {
+    font-size: 90px;
+    width: 220px;
 }
 
-.description-box article {
-    padding-left: 5px;
-}
-
-footer {
-    border-top: black 1px solid;
-    padding-top: 28px;
-    height: 75px;
-    /* background-color: rgb(97, 194, 72); */
-    background-color: #3B8BEB;
-}
-
-footer p {
-    text-align: center;
-    font-size: 12px;
-    color: black;
+.description-box h4 {
+    text-align: justify;
+    margin-top: 10px;
 }
 
 .review-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3B8BEB;
+    font-size: 24px;
+    font-weight: normal;
     text-align: center;
-    text-decoration: underline;
-    
-    color: rgb(97, 194, 72);
+
 }
 
-.google-reviews {
-    border: rgb(97, 194, 72) 2px solid;
+
+/* Misc Formatting */
+.bold-text {
+    font-weight: bold;
 }
+
 
 @media screen and (max-width: 1100px) {
-    .description-box {
-        flex-direction: column;
-        width: 90%;
+.description-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
+.icon-box {
+    width: 100%;
+}
+.material-icons {
+    width: 100%;
+}
+}
 
-    .va-cert {
-        display: none;
-    }
+@media screen and (max-width: 950px) {
+    
 }

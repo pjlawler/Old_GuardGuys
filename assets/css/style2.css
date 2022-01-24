@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+header {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.share {
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: black 1px solid;
+    background-color: #3B8BEB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share img {
+    width: 36px;
+}
+
+.share ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.share li {
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.share a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Kanit';
+    font-weight: 550;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-style: oblique;
+}
+
+.share a span {
+    font-size: 18px;
+}
+
+.logo-block {
+    display: flex;
+    padding: 15px;
+    background-color: rgb(221, 219, 219);
+    border-bottom: black 1px solid;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.logo-block .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-block p {
+    font-family: 'Kanit';
+    color: #61C248;
+    color: black;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.3;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
+.nav-menu li {
+    width: 170px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #3B8BEB;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    background-color: #3B8BEB;
+    color: #ffffff;
+}
+
+
+.main {
+    /* margin-top: 25px; */
+    /* background-color: white; */
+    /* width: 80%; */
+    /* margin: 0 auto; */
+}
+
+h2 {
+    font-size: 48px;
+    color: #3B8BEB;
+    font-weight: 650;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 95%;
+}
+
+.main ul {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.main ul li {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+#what-we-do {
+    background: rgba(97, 194, 72, .5);
+}
+
+.description-box {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom:#3B8BEB solid 2px;
+    padding-bottom: 20px;
+}
+
+.description-box:last-child {
+    border: none;
+}
+
+.description-box h4 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.description-box ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.description-box li a {
+    font-size: 24x;
+    font-style: oblique;
+}
+
+.description-box .subscript {
+    font-size: 18px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-box p {
+    font-size: 35px;
+    text-align: center;
+    width: 300px;
+    color: #3B8BEB;
+}
+
+.description-box .material-icons {
+    font-size: 200px;
+    color: #3B8BEB;
+}
+
+.description-box article {
+    padding-left: 5px;
+}
+
+footer {
+    border-top: black 1px solid;
+    padding-top: 28px;
+    height: 75px;
+    /* background-color: rgb(97, 194, 72); */
+    background-color: #3B8BEB;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+
+.review-header {
+    text-align: center;
+    text-decoration: underline;
+    
+    color: rgb(97, 194, 72);
+}
+
+.google-reviews {
+    border: rgb(97, 194, 72) 2px solid;
+}
+
+@media screen and (max-width: 1100px) {
+    .description-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .va-cert {
+        display: none;
+    }
+}
