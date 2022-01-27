@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital@1&family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/header-footer.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     
   </head>
   <body>
     <header>
+      <!-- Standardized Header -->
       <div class="social-wrapper">
-        <a href="tel:651-274-1754" class="header-phone">(651) 274-1756<span> Office & On-call</span></a>
+        <a href="tel:651-274-1754" class="header-phone">(651) 274-1756<span> Office & On-Call</span></a>
         <ul>
           <li><a href="tel:651-274-1756"><img class="contact-icon" src="./assets/images/phone.png" alt="Call us!"></a></li>
           <li><a href="mailto:support@guardguys.com"><img class="contact-icon" src="./assets/images/email.png" alt="Email us!"></a></li>
@@ -26,22 +28,23 @@
           <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/911DrugTest"><img class="contact-icon" src="./assets/images/twitter.png" alt="Twitter"></a></li>
         </ul>
       </div>
-      
       <div class="nav-wrapper">
-        <img class="guardguys-logo" src="./assets/images/GuardGuys OnSITE Logo.png" alt="OnSITE Logo" width="250"/>
-        <div class="header-middle">
-          <p>Whether you're an individual looking for a personal test or a large company needing assistance with your drug and alcohol programs, you’re OnSITE!</p>
-          <ul class="nav-menu">
-            <li><a href="#what-we-do">What We Do</a></li>
-            <li><a href="#">Get More Info</a></li>
-            <li><a href="#about-us">About Us</a></li>
-          </ul>
+        <div class="logo-wrapper">
+          <a href="index.html"><img class="guardguys-logo" src="./assets/images/GuardGuys OnSITE Logo.png" alt="OnSITE Logo" height="100px"/></a>
+          <a href="https://business.defense.gov/Small-Businesses/SDVOSB/"><img class="va-cert" src="./assets/images/VOSB.png" alt=""></a>        
+        
+          <!-- Changes depending on page -->
         </div>
-        <img class="va-cert" src="./assets/images/VOSB.png" alt="">
+          <ul class="nav-menu">
+            <li><a href="#what-we-do"><button>What We Do</button></a></li>
+            <li><a href="#why-use-us"><button>Why Use Us</button></a></li>
+            <li><a href="#request-info"><button>Request Info</button></a></li>
+          </ul>
       </div>
     </header>
-    <div>
-      <img src="./assets/images/roof-top-cropped.png" width="100%" alt="">
+    
+    <div class="hero">
+      <img src="./assets/images/roof-top-cropped.png" alt="">
     </div>
     
   <section id="what-we-do" class="main">
@@ -56,15 +59,23 @@
         <li><span class="bold-text">COVID-19</span> - rapid antigen, antibody and PCR</li>
       </ul>
       <h3 class="text-level-1">In addition to providing non-regulated tests/screenings for our customers, OnSITE is also certified by the Department of Transportation to conduct federally regulated drug and alcohol testing for all of their agencies including the FMCSA, FAA, FRA etc. We also provide Consortium/Third Party Administrator services including compliance management, training and random DOT consortium pools.</h3>
+      <div class="more-info-wrapper">
+        <p>Learn more about what we do!</p>
+        <div class="more-info-buttons">
+          <a href="our-services.html"><button class="info-button">Our Services</button></a>
+          <a href="dot-programs.html"><button class="info-button">DOT Programs</button></a>
+          <button class="info-button">Program Mgmt</button>
+          <button class="info-button">Pricing</button>
+        </div>  
+      </div>
     </div>
   </section>
 
-  <section id="about-us" class="main">
+  <section id="why-use-us" class="main">
     <div class="info-wrapper">
       <h2 class="section-title">Why Use Us</h2>
     <h3 class="text-level-1">We realize that you have a multitude of places to choose from when it comes to where you get your drug/alcohol testing services. We may not be the lowest price service provider, but we are defintely the best!</h3>
-    <h3 class="text-level-1">Here are a few of the benefits of chosing Guard Guys' OnSITE Drug Testing and Consulting.</h3>
-    
+    <h3 class="review-header">Here are a few of the benefits of chosing Guard Guys' OnSITE Drug Testing and Consulting.</h3>
     <div class="description-box">
       <div class="icon-box">
         <span class="material-icons">home_work</span>
@@ -77,7 +88,7 @@
         <ul>
           <li><a><span class="bold-text">Hours: </span> Monday through Friday; 8am - 5pm</a></li>
           <li><a><span class="bold-text">Location: </span><a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/qyDyQCDoYto4To626">70 County Road C West #702, Little Canada, MN 55117</a></li>
-          <li><a class="subscript">We have ample parking out front and we can accommodate semi-trailer trucks in our back parking lot.</a></li>
+          <li><a class="subscript">We have ample parking out front and can also accommodate semi-trailer trucks in our back parking lot.</a></li>
         </ul>
       </article>
     </div>
@@ -89,7 +100,7 @@
       </div>
       <article>
         <h4 class="text-level-2">All the testings and screenings that we provide in our Little Canada clinic are also available to be conducted OnSITE at any location by one of our fast and friendly mobile collectors. It's the same cost for the testing, we just simply charge a $99/hr fee for travel and for being OnSITE anywhere you'd like to use our fanatical customer-service.</h4>
-        <h4 class="text-level-2">Having us go directly to where your employees are working allows them to have minimal down-time as we work with-in their schedule - <span  class="bold-text">saving you money!</span></h4>
+        <h4 class="text-level-2">Having us go directly to where your employees are working allows them to have minimal down-time as we work within their schedule - <span  class="bold-text">saving you money!</span></h4>
       </article>
     </div>
 
@@ -98,7 +109,10 @@
         <span class="material-icons">update</span>
         <p>24/7 Repsonse</p>
       </div>
-      <article class="text-level-2">Lorem ipsum dolor sit amet. In error earum et quas autem eos omnis aspernatur et sint optio qui quis quia qui nesciunt totam et excepturi dolorem. Id quam exercitationem in laboriosam harum qui exercitationem libero. Et accusantium minus ut dolorem odit ea commodi numquam aut veritatis fugiat a beatae repellat non dolor veritatis. Aut dolores quas a nobis placeat eos laudantium placeat laudantium aspernatur. Est quae nisi cum soluta eaque aut maiores vero est nostrum voluptas. Ut dolorum impedit non necessitatibus aspernatur At voluptatem cumque. Id similique nostrum At dolor necessitatibus rem placeat sint et commodi asperiores et neque molestiae. Sed ipsa minima quo omnis atque ea adipisci rerum.</article>
+      <article>
+        <h4 class="text-level-2">Workplace safety is unarguably the most important aspect to any business’s ethos. Because many business operations occur outside of what is considered “normal” working-hours, typically 8 - 5  Monday through Friday, those businesses need a trusted partner that is on-call 24-hours a day, 7-days a week.</h4>
+        <h4 class="text-level-2">We are that partner! Our typical response time, anywhere in the Metro, to an accident on-the-job or a suspected employee of being under the influence is <span class="bold-text">less than 2-hours!</span></h4>
+      </article>
     </div>
 
     <div class="description-box">
@@ -108,19 +122,22 @@
       </div>
       <article class="text-level-2">Lorem ipsum dolor sit amet. In error earum et quas autem eos omnis aspernatur et sint optio qui quis quia qui nesciunt totam et excepturi dolorem. Id quam exercitationem in laboriosam harum qui exercitationem libero. Et accusantium minus ut dolorem odit ea commodi numquam aut veritatis fugiat a beatae repellat non dolor veritatis. Aut dolores quas a nobis placeat eos laudantium placeat laudantium aspernatur. Est quae nisi cum soluta eaque aut maiores vero est nostrum voluptas. Ut dolorum impedit non necessitatibus aspernatur At voluptatem cumque. Id similique nostrum At dolor necessitatibus rem placeat sint et commodi asperiores et neque molestiae. Sed ipsa minima quo omnis atque ea adipisci rerum.</article>
     </div>
-
-    <h3 class="review-header">Here's what our customers are saying</h3>
-    <div class="elfsight-app-eb67281a-578a-4d47-b385-d48589e1be0a google-review"></div>
   </div>
-
-
-
-
-    <!-- <div class="logo-wrapper">
-      <img class="logo" src="./assets/images/SDVOB.png" alt="SDVOB Logo" width="200" height="200"/>
-    </div> -->
   </section>
-    
+
+  <section id="request-info" class="main">
+    <div class="modal-wrapper">
+      <h2 class="section-title">Request Info</h2>
+    </div>
+    <form>
+      
+    </form>
+  </section>
+   
+  <h3 class="review-header">Here's what our customers are saying</h3>
+  <div class="elfsight-app-eb67281a-578a-4d47-b385-d48589e1be0a google-review"></div>
+
+
   <footer>
     <p>Built and maintained by Lawler Innovations Inc &copy2022</p>
   </footer>
