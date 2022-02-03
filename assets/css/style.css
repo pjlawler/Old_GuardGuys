@@ -12,7 +12,7 @@ body {
 
 .main {
     /* background: chartreuse; */
-    scroll-margin-top: 230px;
+    scroll-margin-top: 185px;
 }
 
 .hero img {
@@ -21,9 +21,9 @@ body {
 
 /* Standard Sections */
 .info-wrapper {
-    width: 90%;
+    width: 1100px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 20px;
     border-bottom: black solid 2px;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .text-level-1 {
     font-weight: normal;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -47,7 +47,7 @@ body {
 
 .text-level-2 {
     font-weight: normal;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,7 +62,7 @@ body {
 
 .info-wrapper li {
     font-weight: normal;
-    font-size: 28px;
+    font-size: 20px;
     font-style: oblique;
     line-height: 1.5;
 }
@@ -94,7 +94,7 @@ body {
 }
 
 .material-icons {
-    font-size: 25vh;
+    font-size: 20vh;
     width: 250px;
 }
 
@@ -112,7 +112,8 @@ article {
     margin-bottom: 20px;
     color: #3B8BEB;
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
+    font-style: oblique;
     text-align: center;
 }
 
@@ -176,6 +177,11 @@ article {
 
 
 @media screen and (max-width: 1100px) {
+
+.info-wrapper {
+        width: 90%;
+}
+
 .description-box {
     flex-direction: column;
     justify-content: center;
